@@ -1,0 +1,190 @@
+.example-arrow-class {
+    /*
+     * The marker-end attribute changes the style of the class to have the
+     * corresponding style. By changing the class on the svg object and assigning
+     * each marker-end to a different class, you'll be able to change the arrow
+     * styles accordingly.
+     */
+    marker-end: url(#arrow-head);
+    marker-end: url(#arrow-head-hovered);
+    marker-end: url(#arrow-head-highlighted);
+    marker-end: url(#arrow-head-highlighted-selected);
+}
+
+/* Text styles - Referenced from my P1 */
+h1 {
+    font-family: 'Castoro', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Y axes - Referenced from Tutorial 5 */
+
+.y-axis {
+    color: #2e2e2e;
+    font-size: 14px;
+}
+
+.sp-y-axis {
+    color: #2e2e2e;
+    font-size: 14px;
+}
+
+.sp-y-axis line {
+    stroke: #adadad;
+}
+
+.lc-y-axis {
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.lc-y-axis line {
+    opacity: 0;
+}
+
+.y-axis line {
+    stroke: #d5d5d5;
+}
+
+.y-axis path {
+    stroke: #ffffff;
+}
+
+/* X axes - Referenced from Tutorial 5 */
+
+.x-axis {
+    color: #2e2e2e;
+    font-size: 16px;
+}
+
+.sp-x-axis {
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.sp-x-axis line {
+    stroke: #d5d5d5;
+}
+
+.lc-x-axis {
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.lc-x-axis line {
+    opacity: 0;
+}
+
+/* Titles */
+
+.bc-title {
+    color: #2e2e2e;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.axis-title {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-weight: 580;
+}
+
+/* Marks */
+
+.bar {
+    fill: #b8b6d2;
+}
+
+.bar:hover {
+    stroke: #3b3b47;
+}
+
+.bar.active {
+    fill: #716f89;
+}
+
+.point {
+    fill: #343444;
+}
+
+.point:hover {
+    stroke: #1d1d27;
+    fill: #1d1d27;
+    fill-opacity: 0.9;
+}
+
+.point:active {
+    fill: #1d1d27;
+    fill-opacity: 0.8;
+}
+
+.point:inactive {
+    fill: #343444;
+    fill-opacity: 0.15;
+}
+
+.line {
+    fill: #343444;
+}
+
+.arrow-head:hover {
+    marker-end: url(#arrow-head-hovered);
+}
+
+/* Check */
+.arrow-head:active {
+    marker-end: url(#arrow-head-highlighted-selected);
+}
+
+/* Check */
+.arrow-head:highlight {
+    marker-end: url(#arrow-head-highlighted);
+}
+
+/* Containers - Referenced from Tutorial 5 */
+.top-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+.bottom-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.margin-right {
+    margin-right: 50px;
+}
+
+/* Tooltip - Referenced from Tutorial 5 */
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    min-width: 160px;
+    color: #333;
+}
+
+.tooltip-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#tooltip ul {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+}
